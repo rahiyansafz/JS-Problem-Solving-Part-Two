@@ -41,4 +41,4 @@ function afunction(x) {
     NotMatched: newArray2
   };
 }
-console.log(afunction("b"));
+console.log(afunction("a"));
