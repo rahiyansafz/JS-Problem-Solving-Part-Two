@@ -25,11 +25,20 @@ let myArray = [
   "cherries",
   "coconut"
 ];
-let newArray = [];
-for (let i = 0; i < myArray.length; i++) {
-  if (myArray[i].slice(0, 1) === "a") {
-    console.log("okay");
-    newArray.push(myArray[i]);
+
+function afunction(x) {
+  let newArray = [];
+  let newArray2 = [];
+  for (let i = 0; i < myArray.length; i++) {
+    if (myArray[i].slice(0, 1) === x) {
+      newArray.push(myArray[i]);
+    } else {
+      newArray2.push(myArray[i]);
+    }
   }
+  return {
+    Matched: newArray,
+    NotMatched: newArray2
+  };
 }
-console.log(newArray);
+console.log(afunction("b"));
