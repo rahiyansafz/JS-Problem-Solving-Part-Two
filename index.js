@@ -42,3 +42,23 @@ function afunction(x) {
   };
 }
 console.log(afunction("a"));
+
+////
+
+let countryName = [
+  "Bangladesh",
+  "Australia",
+  "Romania",
+  "Malaysia",
+  "Uganda",
+  "Denmark",
+  "Austria"
+];
+let text = "";
+for (let i = 0; i < countryName.length; i++) {
+  // newArray.push(countryName[i].slice(0, 1));
+  text += countryName[i].slice(0, 1);
+}
+// let b = newArray.toString().replace(/,/g, "");
+// console.log(b);
+console.log(text);
