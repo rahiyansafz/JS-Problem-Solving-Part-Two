@@ -57,7 +57,7 @@ let countryName = [
 let text = "";
 for (let i = 0; i < countryName.length; i++) {
   // newArray.push(countryName[i].slice(0, 1));
-  text += countryName[i].slice(0, 1);
+  text += countryName[i].substr(i, 1);
 }
 // let b = newArray.toString().replace(/,/g, "");
 // console.log(b);
