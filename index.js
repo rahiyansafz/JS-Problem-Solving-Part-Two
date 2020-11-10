@@ -148,7 +148,6 @@ function findDuplicates(x) {
   for (let i = 0; i < makeArr.length - 1; i++) {
     if (makeArr[i + 1] == makeArr[i]) {
       results.push(makeArr[i]);
-      console.log(results);
     }
   }
   return results;
