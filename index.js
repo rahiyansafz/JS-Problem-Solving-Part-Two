@@ -139,3 +139,23 @@ function newFunc() {
 console.log(newFunc());
 
 //////////////////////
+
+let duplicatedArray = [4, 47, 9, 3, 5, 7, 8, 9, 6, 9, 5];
+
+function findDuplicates(x) {
+  let makeArr = x.slice().sort();
+  let results = [];
+  for (let i = 0; i < makeArr.length - 1; i++) {
+    if (makeArr[i + 1] == makeArr[i]) {
+      results.push(makeArr[i]);
+      console.log(results);
+    }
+  }
+  return results;
+}
+console.log("The duplicates are:", findDuplicates(duplicatedArray));
+
+// const myaArray = [4, 47, 9, 3, 5, 7, 8, 9, 6, 9, 5 ];
+// var result  = {};
+// myaArray.forEach(function(x) { result[x] = (result[x] || 0)+1; });
+// console.log(result)
