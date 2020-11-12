@@ -158,3 +158,22 @@ console.log("The duplicates are:", findDuplicates(duplicatedArray));
 // var result  = {};
 // myaArray.forEach(function(x) { result[x] = (result[x] || 0)+1; });
 // console.log(result)
+
+function getNum(a) {
+  let n = a.toString();
+  let finding = n.indexOf(".");
+  let dropping = n.slice(0, finding + 1);
+  console.log(dropping);
+  let afterdecimal = n.substr(finding + 1, 2);
+  console.log(afterdecimal);
+  let beforedec = n.substr(finding + 3, 1);
+  if (beforedec >= 5) {
+    console.log(afterdecimal++ + 1);
+    console.log(dropping + afterdecimal);
+  } else if (afterdecimal.length === 1 || afterdecimal.length === 0) {
+    console.log(dropping + afterdecimal++ + 0);
+  } else {
+    console.log(n + ".00");
+  }
+}
+getNum(20.345);
