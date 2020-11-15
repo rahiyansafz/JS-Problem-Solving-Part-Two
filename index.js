@@ -177,3 +177,4 @@ function getNum(a) {
   }
 }
 getNum(20.345);
+console.log("");
