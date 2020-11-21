@@ -257,3 +257,19 @@ let newestArray = anArray.filter(function(v, i, array) {
   return array.indexOf(v) !== array.lastIndexOf(v);
 });
 console.log(newestArray);
+console.log("");
+/// OR
+const arr = [1, 2, 3, 3, 3, 4, 5, 6, 7, 7, 8, 9, 9];
+const noOfValue = num => {
+  let count = 0;
+  arr.forEach(item => {
+    if (item == num) {
+      count++;
+    }
+  });
+  return count >= 2 ? true : false;
+};
+const last = arr.filter(item => noOfValue(item));
+console.log(last);
+
+// https://medium.com/@entrptaher
