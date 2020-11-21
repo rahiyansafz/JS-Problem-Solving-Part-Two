@@ -231,8 +231,9 @@ let content = [
   "I became Positive- Rahiyan Safin- 352 batch"
 ];
 for (let i = 0; i < content.length; ++i) {
-  let finalrrng = i + 1 + " " + content[i];
-  console.log(finalrrng);
+  let finalrrng = content[i];
+  let abg = finalrrng.split("-");
+  console.log(i + 1 + " " + abg[1] + " " + abg[2] + " " + abg[0]);
 }
 
 // let a = content.split("-");
