@@ -231,12 +231,22 @@ let content = [
   "I became Positive- Rahiyan Safin- 352 batch"
 ];
 for (let i = 0; i < content.length; ++i) {
-  let finalrrng = content[i];
-  let abg = finalrrng.split("-");
-  console.log(i + 1 + " " + abg[1] + " " + abg[2] + " " + abg[0]);
+  let listing = content[i];
+  let finalRearrange = listing.split("-");
+  console.log(
+    i +
+      1 +
+      " " +
+      finalRearrange[1] +
+      " " +
+      finalRearrange[2] +
+      " " +
+      finalRearrange[0]
+  );
 }
 
 // let a = content.split("-");
 // let add = "01.";
 // console.log(add + " " + a[1] + " " + a[0] + " " + a[2]);
 console.log("");
+///////////////////
