@@ -223,3 +223,19 @@ var output = Math.round(randomNum);
 console.log(output);
 console.log("");
 /////////////////
+
+/////
+// I can pray namaz wholeheartedly- Afroza Begum, 327 batch
+let content = [
+  "I can pray namaz wholeheartedly- Afroza Begum- 327 batch",
+  "I became Positive- Rahiyan Safin- 352 batch"
+];
+for (let i = 0; i < content.length; ++i) {
+  let finalrrng = i + 1 + " " + content[i];
+  console.log(finalrrng);
+}
+
+// let a = content.split("-");
+// let add = "01.";
+// console.log(add + " " + a[1] + " " + a[0] + " " + a[2]);
+console.log("");
