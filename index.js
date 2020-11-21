@@ -250,3 +250,10 @@ for (let i = 0; i < content.length; ++i) {
 // console.log(add + " " + a[1] + " " + a[0] + " " + a[2]);
 console.log("");
 /////////////////////////
+////
+
+let anArray = [1, 2, 3, 3, 3, 4, 5, 6, 7, 7, 8, 9, 9];
+let newestArray = anArray.filter(function(v, i, array) {
+  return array.indexOf(v) !== array.lastIndexOf(v);
+});
+console.log(newestArray);
