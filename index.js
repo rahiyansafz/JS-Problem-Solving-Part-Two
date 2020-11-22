@@ -322,3 +322,25 @@ function test(arr) {
 }
 console.log(test([1, 1, 1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10]));
 console.log("");
+
+////////////////////////////////////
+////////////////////////////////
+// CLASS PROBLEM
+let classOne = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+let classTwo = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+
+var i;
+function abc(name) {
+  for (i = 0; i < classOne.length; i++) {
+    if (classOne[i] === name) {
+      return classOne[i] + " from classOne";
+    }
+  }
+  for (i = 0; i < classTwo.length; i++) {
+    if (classTwo[i] === name) {
+      return classTwo[i] + " from ClassTwo";
+    }
+  }
+  return "nothing found";
+}
+console.log(abc("Mizanur"));
