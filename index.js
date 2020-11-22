@@ -287,3 +287,38 @@ function theValue(num) {
 }
 const okay = anarr.filter(item => theValue(item));
 console.log(okay);
+console.log("");
+////////////////////////
+//////////////// DUPLICATE VALUES OF AN ARRAY
+const array11 = [1, 1, 1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10];
+
+function findDup(arr) {
+  const dup = [];
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j] && dup.indexOf(arr[j]) === -1) {
+        dup.push(arr[j]);
+      }
+    }
+  }
+
+  return dup;
+}
+
+console.log(findDup(array11));
+console.log("");
+////////////////////////////
+//////////////// DUPLICATE VALUES OF AN ARRAY OR
+function test(arr) {
+  var result = [];
+  for (var i = 0; i < arr.length - 1; i++) {
+    for (var j = i + 1; j < arr.length; j++) {
+      if (arr[i] == arr[j] && result.indexOf(arr[i]) == -1) {
+        result.push(arr[i]);
+      }
+    }
+  }
+  return result;
+}
+console.log(test([1, 1, 1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 9, 9, 10]));
+console.log("");
