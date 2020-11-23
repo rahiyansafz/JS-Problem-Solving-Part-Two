@@ -487,3 +487,17 @@ numTwo.splice(0, 0, splicingfromOne[0], splicingfromOne[1]);
 console.log(numTwo);
 console.log("");
 /////////////////////////////////////////
+
+let qwe = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+let rty = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+
+let az = qwe.splice(2, 1);
+console.log(az);
+let za = numTwo.splice(4, 1);
+console.log(za);
+
+qwe.splice(2, 0, az);
+console.log(qwe);
+
+rty.splice(4, 1, za);
+console.log(rty);
