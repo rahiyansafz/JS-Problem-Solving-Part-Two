@@ -496,8 +496,8 @@ console.log(az);
 let za = numTwo.splice(4, 1);
 console.log(za);
 
-qwe.splice(2, 0, az);
+qwe.splice(2, 0, az[0]);
 console.log(qwe);
 
-rty.splice(4, 1, za);
+rty.splice(4, 1, za[0]);
 console.log(rty);
