@@ -384,4 +384,60 @@ function abc(name) {
 }
 console.log(abc("Ifty"));
 console.log("");
+////////////////////////////////////
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const Manager = {
+  name: "John",
+  age: 27,
+  job: "Software Engineer"
+};
+const Intern = {
+  name: "Ben",
+  age: 21,
+  job: "Software Engineer Intern"
+};
+
+function sayHi() {
+  console.log("Hello, my name is", this.name);
+}
+
+Manager.sayHi = sayHi;
+Intern.sayHi = sayHi;
+
+Manager.sayHi();
+Intern.sayHi();
+console.log("");
+
+//////////////
+
+function abcdefg(name) {
+  let countries = [
+    {
+      city: "Zurich",
+      Land: "Switzerland",
+      residence: 10041
+    },
+    {
+      city: "Damascus",
+      Land: "Syria",
+      residence: 100963
+    },
+    {
+      city: "Toronto",
+      Land: "Canada",
+      residence: 10012
+    }
+  ];
+  console.log(countries[0].city);
+  for (i = 0; i < countries.length; i++) {
+    if (countries.includes(name.city)) {
+      return countries[i];
+    }
+  }
+  return "nothing found";
+}
+
+console.log(abcdefg("Toronto"));
+console.log("");
