@@ -431,13 +431,11 @@ function abcdefg(name) {
     }
   ];
   console.log(countries[0].city);
-  for (i = 0; i < countries.length; i++) {
-    if (countries.includes(name.city)) {
-      return countries[i];
-    }
+
+  if (countries.city.includes(name)) {
+    return name;
   }
   return "nothing found";
 }
-
 console.log(abcdefg("Toronto"));
 console.log("");
