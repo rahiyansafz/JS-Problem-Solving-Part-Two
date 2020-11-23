@@ -471,3 +471,18 @@ Intern.sayHi();
 console.log("");
 
 ///////////////////////////////////////
+
+let teamOne = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+let teamTwo = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+
+let swapKeepfromOne = teamOne.splice(0, 2);
+console.log(swapKeepfromOne);
+let swapKeepfromTwo = teamTwo.splice(0, 2);
+console.log(swapKeepfromTwo);
+
+console.log(typeof teamOne);
+
+// let gg = teamOne.toString().split(",");
+// console.log(gg);
+// let hh = teamTwo.toString().split(",");
+// console.log(hh);
