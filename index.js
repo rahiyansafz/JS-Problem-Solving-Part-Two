@@ -476,9 +476,9 @@ let numOne = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
 let numTwo = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
 
 let splicingfromOne = numOne.splice(0, 2);
-console.log(splicingfromOne);
+// console.log(splicingfromOne);
 let splicingfromTwo = numTwo.splice(0, 2);
-console.log(splicingfromTwo);
+// console.log(splicingfromTwo);
 
 numOne.splice(0, 0, splicingfromTwo[0], splicingfromTwo[1]);
 console.log(numOne);
