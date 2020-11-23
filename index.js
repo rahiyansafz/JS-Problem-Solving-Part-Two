@@ -369,3 +369,18 @@ const usingIncludess = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
 const array111 = usingIncludesss.concat(usingIncludess);
 const js = array111.includes("Ifty");
 console.log(js);
+console.log("");
+///////////////////////////////////
+
+function abc(name) {
+  let easy = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+  let peasy = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+  if (easy.includes(name)) {
+    return name + " from classOne";
+  } else if (peasy.includes(name)) {
+    return name + " from ClassTwo";
+  }
+  return "nothing found";
+}
+console.log(abc("Ifty"));
+console.log("");
