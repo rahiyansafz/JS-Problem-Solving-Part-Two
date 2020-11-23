@@ -354,7 +354,7 @@ console.log(array3);
 function findingIncludes(name) {
   for (i = 0; i < array3.length; i++) {
     if (array3[i] === name) {
-      return name + "is in the group";
+      return name + " is in the group";
     }
   }
   return "nothing";
