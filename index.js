@@ -472,18 +472,18 @@ console.log("");
 
 ///////////////////////////////////////
 
-let teamOne = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
-let teamTwo = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+let numOne = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+let numTwo = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
 
-let swapKeepfromOne = teamOne.splice(0, 2);
-console.log(swapKeepfromOne);
-let swapKeepfromTwo = teamTwo.splice(0, 2);
-console.log(swapKeepfromTwo);
+let splicingfromOne = numOne.splice(0, 2);
+console.log(splicingfromOne);
+let splicingfromTwo = numTwo.splice(0, 2);
+console.log(splicingfromTwo);
 
-console.log(typeof swapKeepfromTwo);
-console.log(typeof teamOne);
+console.log(typeof splicingfromTwo);
+console.log(typeof numOne);
 
-// let gg = teamOne.toString().split(",");
+// let gg = numOne.toString().split(",");
 // console.log(gg);
-// let hh = teamTwo.toString().split(",");
+// let hh = numTwo.toString().split(",");
 // console.log(hh);
