@@ -480,6 +480,7 @@ console.log(swapKeepfromOne);
 let swapKeepfromTwo = teamTwo.splice(0, 2);
 console.log(swapKeepfromTwo);
 
+console.log(typeof swapKeepfromTwo);
 console.log(typeof teamOne);
 
 // let gg = teamOne.toString().split(",");
