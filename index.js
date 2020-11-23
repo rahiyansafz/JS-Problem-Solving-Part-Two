@@ -344,3 +344,28 @@ function abc(name) {
   return "nothing found";
 }
 console.log(abc("Mizanur"));
+console.log("");
+/////////////////////////////////
+const usingInclude = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+const usingIncludes = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+const array3 = usingInclude.concat(usingIncludes);
+console.log(array3);
+
+function findingIncludes(name) {
+  for (i = 0; i < array3.length; i++) {
+    if (array3[i] === name) {
+      return name + "is in the group";
+    }
+  }
+  return "nothing";
+}
+
+console.log(findingIncludes("Rahiyan"));
+console.log("");
+/////////////////////////////////
+
+const usingIncludesss = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
+const usingIncludess = ["Razeeb", "Ishrak", "Ifty", "Ifty2", "Ishmam"];
+const array111 = usingIncludesss.concat(usingIncludess);
+const js = array111.includes("Ifty");
+console.log(js);
