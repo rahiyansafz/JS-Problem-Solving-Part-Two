@@ -384,9 +384,69 @@ function abc(name) {
 }
 console.log(abc("Ifty"));
 console.log("");
+
 ////////////////////////////////////
 
+function abcdefg(name) {
+  let countries = [
+    {
+      city: "Zurich",
+      Land: "Switzerland",
+      residence: 10041
+    },
+    {
+      city: "Damascus",
+      Land: "Syria",
+      residence: 100963
+    },
+    {
+      city: "Toronto",
+      Land: "Canada",
+      residence: 10012
+    }
+  ];
+  for (i = 0; i < countries.length; i++) {
+    if (countries[i].city === name) {
+      return countries[i];
+    }
+  }
+  return "nothing found";
+}
+console.log(abcdefg("Toronto"));
+console.log("");
+
+////////////
+
+// function abcdefg(name) {
+//   let countries = [
+//     {
+//       city: ["Zurich"],
+//       Land: "Switzerland",
+//       residence: 10041
+//     },
+//     {
+//       city: ["Damascus"],
+//       Land: "Syria",
+//       residence: 100963
+//     },
+//     {
+//       city: ["Toronto"],
+//       Land: "Canada",
+//       residence: 10012
+//     }
+//   ];
+//   for (i = 0; i < countries.length; i++) {
+//     if (countries[i].city.includes(name)) {
+//       return countries[i].city;
+//     }
+//   }
+//   return "nothing found";
+// }
+// console.log(abcdefg("Toronto"));
+// console.log("");
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 
 const Manager = {
   name: "John",
@@ -410,32 +470,4 @@ Manager.sayHi();
 Intern.sayHi();
 console.log("");
 
-//////////////
-
-function abcdefg(name) {
-  let countries = [
-    {
-      city: "Zurich",
-      Land: "Switzerland",
-      residence: 10041
-    },
-    {
-      city: "Damascus",
-      Land: "Syria",
-      residence: 100963
-    },
-    {
-      city: "Toronto",
-      Land: "Canada",
-      residence: 10012
-    }
-  ];
-  console.log(countries[0].city);
-
-  if (countries.city.includes(name)) {
-    return name;
-  }
-  return "nothing found";
-}
-console.log(abcdefg("Toronto"));
-console.log("");
+///////////////////////////////////////
