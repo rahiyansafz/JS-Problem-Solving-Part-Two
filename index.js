@@ -480,10 +480,10 @@ console.log(splicingfromOne);
 let splicingfromTwo = numTwo.splice(0, 2);
 console.log(splicingfromTwo);
 
-console.log(typeof splicingfromTwo);
-console.log(typeof numOne);
+numOne.splice(0, 0, splicingfromTwo[0], splicingfromTwo[1]);
+console.log(numOne);
 
-// let gg = numOne.toString().split(",");
-// console.log(gg);
-// let hh = numTwo.toString().split(",");
-// console.log(hh);
+numTwo.splice(0, 0, splicingfromOne[0], splicingfromOne[1]);
+console.log(numTwo);
+console.log("");
+/////////////////////////////////////////
