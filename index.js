@@ -506,3 +506,5 @@ console.log(rty);
 console.log("");
 
 ///////////////////////////////////////////////////////////
+
+// https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md
