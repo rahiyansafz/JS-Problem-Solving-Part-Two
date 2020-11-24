@@ -486,6 +486,7 @@ console.log(numOne);
 numTwo.splice(0, 0, splicingfromOne[0], splicingfromOne[1]);
 console.log(numTwo);
 console.log("");
+
 /////////////////////////////////////////
 
 let qwe = ["Rahiyan", "Mizanur", "Habibur", "Kamrul", "Naimur"];
@@ -501,3 +502,7 @@ console.log(qwe);
 
 rty.splice(4, 1, za[0]);
 console.log(rty);
+
+console.log("");
+
+///////////////////////////////////////////////////////////
