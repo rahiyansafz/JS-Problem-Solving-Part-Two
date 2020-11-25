@@ -508,3 +508,20 @@ console.log("");
 ///////////////////////////////////////////////////////////
 
 // https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md
+//
+//////////////////////////////////////////////////////////
+//
+
+let arr = [
+  { name: "string 1", value: "this", other: "that" },
+  { name: "string 2", value: "this", other: "that" }
+];
+
+let obj = arr.find((o, i) => {
+  if (o.name === "string 1") {
+    arr[i] = { name: "new string", value: "this", other: "that" };
+    return true;
+  }
+});
+
+console.log(arr);
