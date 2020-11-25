@@ -537,4 +537,23 @@ const object = { kiwi: '🥝', pear: '🍐', cheese: '🧀' },;
 console.log('kiwi' in object)
 if ('kiwi' in object) {
 }
+console.log("")
+//
+///////////////////////////////////////
+//
 
+function absf(name) {
+let anArrays = [
+  { name: 'Angular', frameworkOf: 'JavaScript'},
+  { name: 'TypeScript', SuperSetOf: 'JavaScript'},
+  { name: 'JavaScript', frameworkOf: 'None'},
+  { name: 'foundation', frameworkOf: 'CSS'},    
+]
+    for (let index = 0; index < anArrays.length; index++) {
+      if (name === anArrays[index].name) {
+       return anArrays[index];
+      }
+    }
+     return "not matched"
+}
+    console.log(absf("JavaScript"));
