@@ -533,10 +533,8 @@ console.log("");
 
 const object = { kiwi: '🥝', pear: '🍐', cheese: '🧀' },;
 
-'kiwi' in object; // true
+'kiwi' in object; 
 console.log('kiwi' in object)
-// Use it as a conditional
 if ('kiwi' in object) {
-  // do something if property key exists
 }
 
